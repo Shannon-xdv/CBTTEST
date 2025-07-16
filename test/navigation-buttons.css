@@ -1,0 +1,55 @@
+/* Add this to loadquestion.php output or modify the JavaScript to generate this structure */
+.nav-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.nav-button-wrapper {
+    flex: 0 0 48%;
+}
+
+.nav-button {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.nav-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-button:active {
+    transform: translateY(0);
+}
+
+/* Banner parent positioning */
+#bannerparent {
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Adjust container to accommodate banner */
+#container {
+    margin-top: 15px;
+}
+
+/* Ensure navigation buttons are properly contained */
+#previous, #next {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+}

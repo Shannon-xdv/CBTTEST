@@ -1,0 +1,14 @@
+2025-06-19 - test1/testfunctions.php - Time writing to database correction - V1.0.0.1 
+2025-06-19 - test1/testfunctions.php - Fix: Ensure elapsed is 0 for new students if starttime is not set or invalid, preventing immediate logout and 'already submitted' error - V1.0.0.3 
+2025-06-19 - admin_toolbox/invigilators/save_time_adjustment.php - Fix: Use full datetime (Y-m-d H:i:s) for curenttime to match testfunctions.php and prevent DateTime parse errors - V1.0.0.4 
+2025-06-19 - test/starttest.php - Update: Navigation panel click handler now uses .qbut class to match navigation panel HTML and ensure question loading works - V1.0.0.5 
+-- Options
+[2024-06-09] admin.php: Changed all dashboard card labels from <span class='countNumber'>...</span> to <span class='text'>...</span> for clarity and consistency. Version: 1.0.7
+[2024-06-09] admin.php: Updated dashboard cards to use unique icons for each card (uil-cog, uil-chart-line, uil-wrench, uil-users-alt, uil-desktop-cloud-alt) for better visual distinction. Version: 1.0.8
+
+The following adjustment was made on [DATE]:2024-06-20
+
+- The sidebar and toggle functionality in admin_toolbox/index.php have been updated to match the behavior and structure of configuration/home.php.
+- The sidebar is now present, fully responsive, and toggled by the slim-toggler button using the standard theme JavaScript (assets/hexadash/theme_assets/js/main.js), with no custom JS.
+- All navigation links and classes are consistent with configuration/home.php.
+- The sidebar is fully hidden when collapsed and slides in when toggled, matching the main configuration page's user experience.
